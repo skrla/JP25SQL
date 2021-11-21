@@ -1,5 +1,5 @@
 drop database if exists opcinajp25;
-create database opcinajp25;
+create database opcinajp25 character set utf8;
 use opcinajp25;
 
 create table zupanija (
@@ -29,3 +29,78 @@ create table zupan(
 alter table zupanija add foreign key(zupan) references zupan(sifra);
 alter table opcina add foreign key(zupanija) references zupanija(sifra);
 alter table mjesto add foreign key(opcina) references opcina(sifra);
+
+insert into zupanija(sifra, naziv, zupan)
+values(null, 'Osječko-Barnjska', 1);
+
+insert into zupanija(sifra, naziv, zupan)
+values(null, 'Vukovarsko-Srijesmka', 2);
+
+insert into zupanija(sifra, naziv, zupan)
+values(null, 'Brodsko-posavska', 3);
+
+insert into opcina(sifra, zupanija, naziv)
+values(null, 1, 'Satnica Đakovačka');
+
+insert into opcina(sifra, zupanija, naziv)
+values(null, 1, 'Bilje');
+
+insert into opcina(sifra, zupanija, naziv)
+values(null, 2, 'Bogdanovci');
+
+insert into opcina(sifra, zupanija, naziv)
+values(null, 2, 'Nuštar');
+
+insert into opcina(sifra, zupanija, naziv)
+values(null, 3, 'Brodski Stupnik');
+
+insert into opcina(sifra, zupanija, naziv)
+values(null, 3, 'Bukovlje');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 1, 'Satnica Đakovačka');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 1, 'Gašinci');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 2, 'Bilje');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 2, 'Kopačevo');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 2, 'Kozjak');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 2, 'Lug');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 3, 'Bogdanovci');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 3, 'Petrovci');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 3, 'Svinjarevci');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 4, 'Nuštar');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 4, 'Cerić');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 5, 'Brodski Stupnik');
+
+insert into mjesto(sifra, opcina, naziv)
+values(null, 6, 'Bukovlje');
+
+insert into zupan(sifra, ime, prezime)
+values(null, 'Ivan', 'Anušić');
+
+insert into zupan(sifra, ime, prezime)
+values(null, 'Damir', 'Dekanić');
+
+insert into zupan(sifra, ime, prezime)
+values(null, 'Danijel', 'Marušić');
