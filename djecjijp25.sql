@@ -1,5 +1,5 @@
 drop database if exists djecjijp25;
-create database djecjijp25;
+create database djecjijp25 character set utf8;
 use djecjijp25;
 
 create table djecjivrtic(

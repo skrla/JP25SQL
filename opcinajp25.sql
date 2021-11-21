@@ -31,79 +31,37 @@ alter table opcina add foreign key(zupanija) references zupanija(sifra);
 alter table mjesto add foreign key(opcina) references opcina(sifra);
 
 insert into zupan(sifra, ime, prezime)
-values(null, 'Ivan', 'Anušić');
-
-insert into zupan(sifra, ime, prezime)
-values(null, 'Damir', 'Dekanić');
-
-insert into zupan(sifra, ime, prezime)
-values(null, 'Danijel', 'Marušić');
+values(null, 'Ivan', 'Anušić'),
+(null, 'Damir', 'Dekanić'),
+(null, 'Danijel', 'Marušić');
 
 insert into zupanija(sifra, naziv, zupan)
-values(null, 'Osječko-Barnjska', 1);
-
-insert into zupanija(sifra, naziv, zupan)
-values(null, 'Vukovarsko-Srijesmka', 2);
-
-insert into zupanija(sifra, naziv, zupan)
-values(null, 'Brodsko-posavska', 3);
+values(null, 'Osječko-Barnjska', 1),
+(null, 'Vukovarsko-Srijesmka', 2),
+(null, 'Brodsko-posavska', 3);
 
 insert into opcina(sifra, zupanija, naziv)
-values(null, 1, 'Satnica Đakovačka');
-
-insert into opcina(sifra, zupanija, naziv)
-values(null, 1, 'Bilje');
-
-insert into opcina(sifra, zupanija, naziv)
-values(null, 2, 'Bogdanovci');
-
-insert into opcina(sifra, zupanija, naziv)
-values(null, 2, 'Nuštar');
-
-insert into opcina(sifra, zupanija, naziv)
-values(null, 3, 'Brodski Stupnik');
-
-insert into opcina(sifra, zupanija, naziv)
-values(null, 3, 'Bukovlje');
+values(null, 1, 'Satnica Đakovačka'),
+(null, 1, 'Bilje'),
+(null, 2, 'Bogdanovci'),
+(null, 2, 'Nuštar'),
+(null, 3, 'Brodski Stupnik'),
+(null, 3, 'Bukovlje');
 
 insert into mjesto(sifra, opcina, naziv)
-values(null, 1, 'Satnica Đakovačka');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 1, 'Gašinci');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 2, 'Bilje');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 2, 'Kopačevo');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 2, 'Kozjak');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 2, 'Lug');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 3, 'Bogdanovci');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 3, 'Petrovci');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 3, 'Svinjarevci');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 4, 'Nuštar');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 4, 'Cerić');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 5, 'Brodski Stupnik');
-
-insert into mjesto(sifra, opcina, naziv)
-values(null, 6, 'Bukovlje');
+values(null, 1, 'Satnica Đakovačka'),
+(null, 1, 'Gašinci'),
+(null, 2, 'Bilje'),
+(null, 2, 'Kopačevo'),
+(null, 2, 'Kozjak'),
+(null, 2, 'Lug'),
+(null, 3, 'Bogdanovci'),
+(null, 3, 'Petrovci'),
+(null, 3, 'Svinjarevci'),
+(null, 4, 'Nuštar'),
+(null, 4, 'Cerić'),
+(null, 5, 'Brodski Stupnik'),
+(null, 6, 'Bukovlje');
 
 update mjesto
 set opcina = 4,
