@@ -104,3 +104,28 @@ values(null, 5, 'Brodski Stupnik');
 
 insert into mjesto(sifra, opcina, naziv)
 values(null, 6, 'Bukovlje');
+
+update mjesto
+set opcina = 4,
+naziv = 'Marinci'
+where sifra=9;
+
+update mjesto
+set naziv = 'Krajačići'
+where sifra = 12;
+
+update mjesto 
+set naziv = 'Ježevik'
+where sifra = 13;
+
+delete from mjesto
+where sifra = 13;
+
+delete from mjesto 
+where sifra = 12;
+
+delete from opcina
+where sifra = 5;
+
+delete from opcina
+where sifra = 6;
