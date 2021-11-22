@@ -103,3 +103,5 @@ alter table clanTima add foreign key (tim) references tim(redniBrojTima);
 alter table clanTima add foreign key (posao) references posao(redniBrojPosla);
 
 alter table radniDan add foreign key (redniBrojPosla, datumTroska) references trosak(redniBrojPosla, datumTroska);
+
+#
