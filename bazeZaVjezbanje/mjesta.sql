@@ -914,3 +914,8 @@ INSERT INTO  mjesto  ( postanskibroj ,  zupanija ,  naziv ) VALUES
 ('53291', 9, 'Novalja'),
 ('53294', 9, 'Lun'),
 ('53296', 9, 'Zubovići');
+
+# odabir mjesta u Osječko-Baranjskoj županiji
+# select * from mjesto where naziv = 'osijek';
+# select zupanija, naziv from mjesto where zupanija = '14';
+
