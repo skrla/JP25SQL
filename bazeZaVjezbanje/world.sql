@@ -5421,3 +5421,8 @@ SET AUTOCOMMIT=1;
 
 # Selecting all Countrys that are placed in Europe
 # select * from country where Continent = 'Europe';
+
+#select * from city;
+#insert into city(ID, Name, CountryCode, District)
+#values (null, 'Donji Miholjac', 'HRV', 'Osijecko-Baranjska');
+
