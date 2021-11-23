@@ -7487,3 +7487,11 @@ insert into katalog (sifra, naslov, autor, izdavac,mjesto) values (3221, 'KRALJI
 insert into autor (sifra, ime, prezime, datumRodenja)
 values (4, 'Matija', 'Skrletović', '1995-09-30');
 
+# Odabir svih osoba sa datumRodenja 1995-09-30
+# select * from autor where datumRodenja = '1995-09-30';
+
+# Odabir svih autora sa imenom Matija¸
+# select * from autor where name = 'Matija';
+
+# Odabir svih izdavača koji su društva sa ograničenom odgovornošću
+# select * from izdavac where naziv like '%d.o.o.';
