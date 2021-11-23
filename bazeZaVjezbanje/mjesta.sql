@@ -919,3 +919,6 @@ INSERT INTO  mjesto  ( postanskibroj ,  zupanija ,  naziv ) VALUES
 # select * from mjesto where naziv = 'osijek';
 # select zupanija, naziv from mjesto where zupanija = '14';
 
+# Odabir svih mjesta sa znakovnim nizom ac
+# select * from mjesto where naziv like '%ac%';
+
