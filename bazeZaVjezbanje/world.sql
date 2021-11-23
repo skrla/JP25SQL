@@ -5433,3 +5433,6 @@ SET AUTOCOMMIT=1;
 #set Name = 'Spickovina'
 #where Name = 'Donji Miholjac';
 
+#Deleting city named Spickovina 
+#delete from city 
+#where name = 'Spickovina';
