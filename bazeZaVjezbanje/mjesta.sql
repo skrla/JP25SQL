@@ -922,3 +922,5 @@ INSERT INTO  mjesto  ( postanskibroj ,  zupanija ,  naziv ) VALUES
 # Odabir svih mjesta sa znakovnim nizom ac
 # select * from mjesto where naziv like '%ac%';
 
+insert into mjesto(postanskibroj, zupanija, naziv)
+values(31666, 14, 'Programovci')
