@@ -5422,7 +5422,14 @@ SET AUTOCOMMIT=1;
 # Selecting all Countrys that are placed in Europe
 # select * from country where Continent = 'Europe';
 
+#Adding new city named Donji Miholjac
 #select * from city;
 #insert into city(ID, Name, CountryCode, District)
 #values (null, 'Donji Miholjac', 'HRV', 'Osijecko-Baranjska');
+
+#Changing name from Donji Miholjac to Špičkovina
+
+#update city
+#set Name = 'Spickovina'
+#where Name = 'Donji Miholjac';
 
