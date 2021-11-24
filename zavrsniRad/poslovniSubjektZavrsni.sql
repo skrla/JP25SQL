@@ -9,7 +9,7 @@ create table poslovnaJedinica(
 );
 
 create table posao(
-    redniBrojPosla int not null primary key auto_increment,
+    sifraPosla int not null primary key auto_increment,
     opisPosla varchar(200) not null,
     cijenaPosla decimal(18,2) not null,
     lokacijaPosla varchar(50) not null,
@@ -19,7 +19,7 @@ create table posao(
 );
 
 create table djelatnik(
-    oib char(11) primary key not null,
+    oib int primary key not null,
     ime varchar(50) not null,
     prezime varchar(50) not null,
     adresaStanovanja varchar(50) not null,
@@ -33,13 +33,14 @@ create table djelatnik(
 );
 
 create table tim(
-    redniBrojTima int not null primary key,
+    sifraTima int not null primary key,
+    nazivTima varchar(50) not null,
     napomena varchar(200)
 );
 
 create table clanTima(
-    sifra int not null primary key auto_increment,
-    djelatnik char(11) not null,
+    sifraClana int not null primary key auto_increment,
+    djelatnik int not null,
     tim int not null,
     posao int not null
 );
@@ -47,7 +48,5 @@ create table clanTima(
 alter table djelatnik add foreign key (poslovnaJedinica) references poslovnaJedinica(sifraPoslovneJedinice);
 
 alter table clanTima add foreign key (djelatnik) references djelatnik(oib);
-alter table clanTima add foreign key (tim) references tim(redniBrojTima);
-alter table clanTima add foreign key (posao) references posao(redniBrojPosla);
-
-# zamijeniti primary key poslocvne nazivPoslovneJedinice
+alter table clanTima add foreign key (tim) references tim(sifraTima);
+alter table clanTima add foreign key (posao) references posao(sifraPosla);
