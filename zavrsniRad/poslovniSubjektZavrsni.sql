@@ -50,3 +50,12 @@ alter table djelatnik add foreign key (poslovnaJedinica) references poslovnaJedi
 alter table clanTima add foreign key (djelatnik) references djelatnik(oib);
 alter table clanTima add foreign key (tim) references tim(sifraTima);
 alter table clanTima add foreign key (posao) references posao(sifraPosla);
+
+
+insert into poslovnaJedinica(sifraPoslovneJedinice, nazivPoslovneJedinice, adresa) values
+(null, 'Arteco Osijek', 'Ulica Martina Divalta 133b'),
+(null, 'Arteco Đakovo', 'Ulica Vladimira Nazora 10'),
+(null, 'Arteco Vukovar', 'Fruškogorska 12');
+
+insert into posao(sifraPosla, opisPosla, cijenaPosla, lokacijaPosla, pocetakPosla, krajPosla, napomena) values
+(null, 'Unutrašnja keramika', 13206.95, 'Ulica Lorenza Jegera 5', '2021-09-18', '2021-10-02', 'Posavijetovati se sa klijentom koje kombinacije stavljati');
