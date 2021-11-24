@@ -158,3 +158,55 @@ insert into clan (grupa, polaznik) values
 (1,21),
 (1,22),
 (1,23);
+#select naziv, smjer from grupa;
+#
+#select a.naziv as grupa, b.naziv as smjer
+#from grupa a inner join smjer b on a.smjer = b.sifra;
+#
+#select a.naziv as grupa, b.naziv as smjer, d.ime, d.prezime 
+#from grupa a inner join smjer b on a.smjer = b.sifra
+#inner join predavac c on a.predavac = c.sifra
+#inner join osoba d on c.osoba = d.sifra ;
+#
+#select a.naziv as grupa, b.naziv as smjer, d.ime, d.prezime 
+#from grupa a inner join smjer b on a.smjer = b.sifra
+#left join predavac c on a.predavac = c.sifra
+#left join osoba d on c.osoba = d.sifra ;
+#
+#select a.sifra, b.ime, b.prezime
+#from polaznik a inner join osoba b on a.osoba = b.sifra;
+#
+#select d.ime, d.prezime
+#from clan a inner join grupa b on a.grupa = b.sifra
+#inner join polaznik c on a.polaznik = c.sifra 
+#inner join osoba d on c.osoba = d.sifra 
+#where b.naziv = 'JP25';
+#
+#insert into clan(grupa, polaznik)
+#values (2, 23);
+#
+#select * from grupa;
+#
+#select polaznik from clan
+#where grupa = 2;
+#
+#select b.naziv
+#from clan a inner join grupa b on a.grupa = b.sifra 
+#inner join polaznik c on a.polaznik = c.sifra 
+#inner join osoba d on c.osoba = d.sifra
+#where d.ime = 'Matija' and d.prezime = 'Skrletović';
+#
+#update osoba 
+#set prezime = 'Labak'
+#where prezime = 'Skrletović';
+#
+#delete from clan 
+#where polaznik = 23;
+#
+#delete from polaznik 
+#where osoba = 24;
+#
+#delete from osoba
+#where prezime = 'Labak';
+#
+#select * from osoba;
