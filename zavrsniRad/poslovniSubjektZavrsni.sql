@@ -58,4 +58,8 @@ insert into poslovnaJedinica(sifraPoslovneJedinice, nazivPoslovneJedinice, adres
 (null, 'Arteco Vukovar', 'Fruškogorska 12');
 
 insert into posao(sifraPosla, opisPosla, cijenaPosla, lokacijaPosla, pocetakPosla, krajPosla, napomena) values
-(null, 'Unutrašnja keramika', 13206.95, 'Ulica Lorenza Jegera 5', '2021-09-18', '2021-10-02', 'Posavijetovati se sa klijentom koje kombinacije stavljati');
+(null, 'Unutrašnja keramika', 13206.95, 'Ulica Lorenza Jegera 5, Osijek', '2021-09-18', '2021-10-02', 'Posavijetovati se sa klijentom koje kombinacije stavljati'),
+(null , 'Soboslikarski radovi', 9785.50, 'Ulica Kestenova 53, Osijek', '2021-09-29', '2021-10-04', 'Provjeriti koje boje točno koristiti'),
+(null, 'Fasada', 32500.00, 'Ulica Vladimira Nazora 10, Đakovo', '2021-12-01', null, null),
+(null, 'Soboslikarski radovi', 13450,75, 'Ulica Kralja Tomislava, Vukovar', '2021-10-26', '2021-11-08', 'Ponjeti vlastiti materijal');
+
