@@ -7505,3 +7505,9 @@ values (4, 'Matija', 'Skrletović', '1995-09-30');
 # select a.* from autor a
 # inner join katalog b on b.autor = a.sifra 
 # where b.naslov not like '%b%';
+
+# Odabir svih aktivnih izdavača koji su izdali knjige u Zagrebu
+# select c.* from katalog a
+# inner join mjesto b on a.mjesto = b.sifra
+# inner join izdavac c on a.izdavac = c.sifra 
+# where b.naziv = 'Zagreb' and c.aktivan = 1;
