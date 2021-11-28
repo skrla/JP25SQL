@@ -7500,3 +7500,8 @@ values (4, 'Matija', 'Skrletović', '1995-09-30');
 # select a.naslov from katalog a
 # inner join izdavac b on a.izdavac = b.sifra
 # where isnull(b.aktivan) or b.aktivan = 0;
+
+# Odabir svih autora koji nemaju u naslovima knjiga slovo B
+# select a.* from autor a
+# inner join katalog b on b.autor = a.sifra 
+# where b.naslov not like '%b%';
