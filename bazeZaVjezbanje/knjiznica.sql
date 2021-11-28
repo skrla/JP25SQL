@@ -7495,3 +7495,8 @@ values (4, 'Matija', 'Skrletović', '1995-09-30');
 
 # Odabir svih izdavača koji su društva sa ograničenom odgovornošću
 # select * from izdavac where naziv like '%d.o.o.';
+
+# Ispis svih naslova knjiga koje su izdali neaktivni izdavači
+# select a.naslov from katalog a
+# inner join izdavac b on a.izdavac = b.sifra
+# where isnull(b.aktivan) or b.aktivan = 0;
