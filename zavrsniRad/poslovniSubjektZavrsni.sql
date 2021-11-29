@@ -80,6 +80,13 @@ insert into djelatnik(oib, ime, prezime, adresaStanovanja, IBAN, poslovnaJedinic
 (67634616329, 'Krunoslav', 'Groznica', 'Ulica Ivana Gorana Kovačića 37, Kuševac', 'HR4323600001497342715', 2, '1986-02-25', 'SSS', 'groznikruno@gmail.com'),
 (61736793888, 'Davor', 'Jaglac', 'Ulica Pere Kovačevića 32, Samatovci', 'HR7925000093399198932', 1, '2001-11-11', 'SSS', 'jaglacd@gmail.com');
 
-# insert into tim(sifraTima, nazivTima, napomena) values
+insert into tim(sifraTima, nazivTima, napomena) values
+(null, 'SlikariOS', null),
+(null, 'KeramičariOS', 'Pustiti novom djelatniku uz nazor da obavlja sam određene kompliciranije poslove'),
+(null, 'FasaderiDJ', null),
+(null, 'SlikariVU', null);
 
-# insert into clanTima(sifraClana, djelatnik, tim, posao)
+insert into clanTima(sifraClana, djelatnik, tim, posao) values
+
+
+
