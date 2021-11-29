@@ -87,6 +87,18 @@ insert into tim(sifraTima, nazivTima, napomena) values
 (null, 'SlikariVU', null);
 
 insert into clanTima(sifraClana, djelatnik, tim, posao) values
-
-
-
+(null, 49959630206, 3, 3),
+(null, 08400200940, 3, 3),
+(null, 23319388596, 4, 4),
+(null, 53066596410, 2, 1),
+(null, 31087828861, 1, 2),
+(null, 53422846355, 2, 1),
+(null, 36335440393, 4, 4),
+(null, 98669839241, 3, 3),
+(null, 04460455325, 4, 4),
+(null, 50990426783, 1, 2),
+(null, 66356460501, 3, 3),
+(null, 50593234628, 4, 4),
+(null, 81310918711, 4, 4),
+(null, 67634616329, 3, 3),
+(null, 61736793888, 2, 1);
