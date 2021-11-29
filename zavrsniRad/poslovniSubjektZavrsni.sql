@@ -33,7 +33,7 @@ create table djelatnik(
 );
 
 create table tim(
-    sifraTima int not null primary key,
+    sifraTima int not null primary key auto_increment,
     nazivTima varchar(50) not null,
     napomena varchar(200)
 );
@@ -102,3 +102,9 @@ insert into clanTima(sifraClana, djelatnik, tim, posao) values
 (null, 81310918711, 4, 4),
 (null, 67634616329, 3, 3),
 (null, 61736793888, 2, 1);
+
+#select * from clanTima a 
+#inner join djelatnik b on a.djelatnik = b.oib
+#inner join tim c on a.tim = c.sifraTima
+#inner join posao d on a.posao = d.sifraPosla
+#inner join poslovnaJedinica e on b.poslovnaJedinica = e.sifraPoslovneJedinice;
