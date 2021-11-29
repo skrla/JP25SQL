@@ -1,6 +1,6 @@
 drop database if exists edunovajp25;
 create database edunovajp25 character set utf8;
-#c:\xampppp\mysql\bin\mysql -uedunova -pedunova --default_character_set=utf8 < c:\users\skrla\desktop\sqlEdunova\skriptajp25.sql
+#c:\xampppp\mysql\bin\mysql -uedunova -pedunova --default_character_set=utf8 < c:\users\skrla\desktop\Edunova\JP25SQL\skriptajp25.sql
 use edunovajp25;
 
 create table smjer(
